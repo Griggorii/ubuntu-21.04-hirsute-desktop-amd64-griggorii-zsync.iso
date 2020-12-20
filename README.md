@@ -5,4 +5,6 @@ zfs , zsync , special os new , synchronization file links , quantum os , wayland
 
 Dconf: https://github.com/Griggorii/Setting_dconf_linux_OS20.04_V26.0_By_Griggorii_Wayland_adaptation
 
+Python 3.8.5 улучшение изображения видео отрисовки и графики: https://github.com/Griggorii/python3.8.5_ubuntu_20.04_new_rebuild_amd64.deb
+
 OLD OS: https://github.com/Griggorii/Linux_OS20.04_V4_X64_By_Griggorii.iso_ubuntu_focal_fossa-linux-image-kernel-5.9.3
