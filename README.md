@@ -1,5 +1,5 @@
 # hirsute-desktop-amd64-griggorii-zsync.iso
-zfs , zsync , special os new , synchronization file links , quantum os , wayland , mit zfs , rpool , bpool , subiquity os synchronization 20.04 special os , screencast screenrecorder work
+zfs , zsync , special os new , synchronization file links , quantum os , wayland , mit zfs , rpool , bpool , subiquity os synchronization 20.04 special os , screencast screenrecorder work , iso merge to iso
 
 # ISO DOWNLOAD hirsute-live-server-amd64.iso:https://disk.yandex.ru/d/UnhV-gcj5EoiiA
 
