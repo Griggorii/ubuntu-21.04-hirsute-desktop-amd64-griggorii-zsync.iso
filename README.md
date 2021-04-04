@@ -7,6 +7,8 @@ deb install theme + icons if you have an old HDD sample disk, then it will be ne
 
 sudo dpkg -i *.deb
 
+Dconf theme: https://github.com/Griggorii/Setting_dconf_linux_OS20.04_V46.0_By_Griggorii_Wayland_adaptation
+
 synchronization zsync my old os Linux_OS20.04_X64_V5_WINE_Griggorii.iso to hirsute-live-server-amd64.iso
 
 $ urlbase=http://cdimage.ubuntu.com/daily-live/20210403
@@ -22,9 +24,6 @@ ________________________________________________________________________________
 
 OLD OS STABLE BEST GRAPHICS GAMMA: https://github.com/Griggorii/Linux_OS20.04_V5_X64_By_Griggorii.iso_ubuntu_focal_fossa-linux-image-kernel-5.6.0-oem
 
-______________________________________________________________________________________________________________________________________________________
-
-Dconf: https://github.com/Griggorii/Setting_dconf_linux_OS20.04_V46.0_By_Griggorii_Wayland_adaptation
 ______________________________________________________________________________________________________________________________________________________
 
 Python 3.8.5 merge build to 3.9 улучшение изображения видео отрисовки и графики: https://github.com/Griggorii/python3.9_ubuntu_21.04_new_rebuild_amd64.deb
