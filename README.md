@@ -3,6 +3,10 @@ zfs , zsync , special os new , synchronization file links , quantum os , wayland
 
 # ISO DOWNLOAD hirsute-live-server-amd64.iso:https://disk.yandex.ru/d/UnhV-gcj5EoiiA
 
+deb install theme + icons if you have an old HDD sample disk, then it will be necessary to wait more than usual run terminal all deb locate icon theme: 
+
+sudo dpkg -i *.deb
+
 synchronization zsync my old os Linux_OS20.04_X64_V5_WINE_Griggorii.iso to hirsute-live-server-amd64.iso
 
 $ urlbase=http://cdimage.ubuntu.com/daily-live/20210403
