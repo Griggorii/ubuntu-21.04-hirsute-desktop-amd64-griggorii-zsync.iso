@@ -7,7 +7,7 @@ synchronization zsync my old os Linux_OS20.04_X64_V5_WINE_Griggorii.iso to hirsu
 
 $ urlbase=http://cdimage.ubuntu.com/daily-live/20210403
 
-$ isoname=$(distro-info -d)-live-server-$(dpkg --print-architecture).iso
+$ isoname=$(distro-info -d)-desktop-amd64-$(dpkg --print-architecture).iso
 
 $ zsync -i Linux_OS20.04_X64_V5_WINE_Griggorii.iso ${urlbase}/${hirsute-hirsute-desktop-amd64.iso}.zsync
 
