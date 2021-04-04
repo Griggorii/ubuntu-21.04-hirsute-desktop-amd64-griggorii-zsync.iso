@@ -9,7 +9,7 @@ $ urlbase=http://cdimage.ubuntu.com/daily-live/20210403
 
 $ isoname=$(distro-info -d)-live-server-$(dpkg --print-architecture).iso
 
-$ zsync ${urlbase}/${hirsute-hirsute-desktop-amd64.iso}.zsync
+$ zsync -i Linux_OS20.04_X64_V5_WINE_Griggorii.iso ${urlbase}/${hirsute-hirsute-desktop-amd64.iso}.zsync
 
 Log download zsync synchronization
 verifying download...checksum matches OK
