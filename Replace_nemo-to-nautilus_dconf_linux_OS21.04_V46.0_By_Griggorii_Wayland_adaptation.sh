@@ -5603,6 +5603,8 @@ mv Griggorii_3.json ~/.config/tilix/schemes/
 EOF
 rm Griggorii_3.json
 EOF
+mkdir ~/.config/autostart/
+EOF
 cat << EOF > nautilus-autostart.desktop
 #!/usr/bin/env xdg-open
 [Desktop Entry]
