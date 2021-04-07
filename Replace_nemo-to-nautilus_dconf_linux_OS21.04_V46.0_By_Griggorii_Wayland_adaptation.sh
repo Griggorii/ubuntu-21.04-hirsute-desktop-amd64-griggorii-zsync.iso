@@ -5620,6 +5620,8 @@ chmod -R a+rx nautilus-autostart.desktop
 EOF
 cp nautilus-autostart.desktop ~/.config/autostart/
 EOF
+gsettings set org.gnome.shell.extensions.user-theme name "Orchis"
+EOF
 sudo mv nautilus-autostart.desktop /etc/xdg/autostart/
 EOF
 rm nautilus-autostart.desktop
