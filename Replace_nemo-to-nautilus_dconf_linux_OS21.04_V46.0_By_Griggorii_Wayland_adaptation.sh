@@ -2,11 +2,40 @@
 
 ####Griggorii@gmail.com mit license dconf-config
 
+mkdir backup-theme-icon
+EOF
+cd backup-theme-icon
+EOF
+dconf dump /org/cinnamon/desktop/interface/ > backup-cinnamon-theme-icon-mouse-font.dconf
+EOF
+dconf dump /org/gnome/desktop/interface/ > backup-gnome-theme-icon-mouse-font.dconf
+EOF
+dconf dump /org/gnome/shell/extensions/user-theme/ > backup-gnome-shell-theme.dconf
+EOF
+dconf dump /org/cinnamon/desktop/background/ > backup-cinnamon-background-wallpaper.dconf
+EOF
+dconf dump /org/gnome/desktop/background/ > backup-gnome-wallpaper.dconf
+EOF
+dconf dump /org/gnome/desktop/screensaver/ > backup-gnome-screensaver-wallpaper.dconf
+EOF
+cd -
+EOF
+tar -czvf backup-theme-icon.tar.gz ./backup-theme-icon 
+EOF
+rm -rf ./backup-theme-icon
+EOF
+cat << EOF > backup-theme-icon-restore.sh
+tar -xzvf ./backup-theme-icon.tar.gz && cd backup-theme-icon && dconf load /org/cinnamon/desktop/interface/ < backup-cinnamon-theme-icon-mouse-font.dconf && dconf load /org/gnome/desktop/interface/ < backup-gnome-theme-icon-mouse-font.dconf && dconf load /org/gnome/shell/extensions/user-theme/ < backup-gnome-shell-theme.dconf && dconf load /org/cinnamon/desktop/background/ < backup-cinnamon-background-wallpaper.dconf && dconf load /org/gnome/desktop/background/ < backup-gnome-wallpaper.dconf && dconf load /org/gnome/desktop/screensaver/ <  backup-gnome-screensaver-wallpaper.dconf && rm -rf backup-cinnamon-theme-icon-mouse-font.dconf backup-gnome-theme-icon-mouse-font.dconf backup-gnome-shell-theme.dconf backup-cinnamon-background-wallpaper.dconf backup-gnome-wallpaper.dconf backup-gnome-screensaver-wallpaper.dconf ./backup-cinnamon-theme-icon-mouse-font.dconf ./backup-gnome-theme-icon-mouse-font.dconf ./backup-gnome-shell-theme.dconf && cd - && rm -rf ./backup-theme-icon.tar.gz ./backup-theme-icon ./backup-cinnamon-background-wallpaper.dconf ./backup-gnome-wallpaper.dconf ./backup-gnome-screensaver-wallpaper.dconf backup-theme-icon-restore.sh
+EOF
+chmod -R a+rwx backup-theme-icon-restore.sh
+EOF
 mkdir ~/.config/autostart/
 EOF
 dconf dump / > dconf-settings-original-restore_21.04.ini
 EOF
 dconf reset -f /
+EOF
+gsettings set org.gnome.shell.extensions.user-theme name "Orchis"
 EOF
 xdg-mime default nautilus.desktop inode/directory
 EOF
@@ -2755,6 +2784,8 @@ cursor-blink-time=1200
 cursor-size=24
 cursor-theme='breeze_cursors'
 font-name='Ubuntu 11.5'
+gtk-theme='Pop-dark-oomox-griggorii_theme_2020_V4'
+icon-theme='oomox-griggorii'
 keyboard-layout-prefer-variant-names=false
 scaling-factor=uint32 0
 text-scaling-factor=1.0
@@ -3483,8 +3514,8 @@ exec='tilix'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-primary-color='#000000'
-secondary-color='#000000'
+primary-color='#2c001e'
+secondary-color='#2c001e'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -3512,9 +3543,13 @@ cursor-theme='breeze_cursors'
 document-font-name='DejaVu Sans Mono Bold 11'
 enable-animations=true
 enable-hot-corners=true
+font-antialiasing='grayscale'
+font-hinting='slight'
 font-name='Ubuntu 11'
+font-rgba-order='rgb'
 gtk-im-module='gtk-im-context-simple'
-gtk-theme='Yaru-dark'
+gtk-theme='Pop-dark-oomox-griggorii_theme_2020_V4'
+icon-theme='oomox-griggorii'
 locate-pointer=true
 menus-have-icons=true
 monospace-font-name='Ubuntu Mono 11'
@@ -3540,7 +3575,7 @@ autorun-x-content-open-folder=['x-content/bootable-media']
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media']
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-control-center', 'org-gnome-tweaks', 'org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'org-gnome-nautilus', 'org-gnome-terminal', 'org-gnome-fileroller', 'org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'org-gnome-totem']
+application-children=['gnome-control-center', 'org-gnome-tweaks', 'org-gnome-gedit', 'firefox', 'com-gexperts-tilix', 'mousepad', 'org-gnome-nautilus', 'org-gnome-terminal', 'org-gnome-fileroller', 'org-gnome-baobab', 'budgie-desktop-settings', 'nemo', 'brave-browser', 'jb-mission-control-jdk8', 'brave-browser-beta', 'thunar', 'gdebi', 'thunderbird', 'telegramdesktop', 'org-midori-browser-midori', 'vlc', 'xfce4-notifyd-config', 'nm-applet', 'com-obsproject-studio', 'yelp', 'gnome-power-panel', 'gnome-network-panel', 'displaycal', 'displaycal-scripting-client', 'stacer', 'chromium-browser', 'gnome-system-monitor', 'org-gnome-boxes', 'displaycal-vrml-to-x3d-converter', 'green-recorder', 'org-gnome-eog', 'io-github-celluloid-player-celluloid', 'update-manager', 'org-gnome-totem', 'org-freedesktop-problems-applet', 'org-gnome-software']
 show-banners=true
 show-in-lock-screen=true
 
@@ -3633,6 +3668,9 @@ application-id='nemo.desktop'
 
 [org/gnome/desktop/notifications/application/nm-applet]
 application-id='nm-applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
+application-id='org.freedesktop.problems.applet.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
@@ -3727,7 +3765,7 @@ two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
 disable-microphone=false
-recent-files-max-age=1
+recent-files-max-age=0
 remember-recent-files=false
 remove-old-temp-files=false
 remove-old-trash-files=false
@@ -3741,8 +3779,8 @@ idle-activation-enabled=false
 lock-delay=uint32 0
 lock-enabled=false
 picture-options='zoom'
-primary-color='#000000'
-secondary-color='#000000'
+primary-color='#2c001e'
+secondary-color='#2c001e'
 
 [org/gnome/desktop/search-providers]
 disabled=['seahorse.desktop']
@@ -4019,7 +4057,7 @@ search-for-entry=['']
 
 [org/gnome/gedit/state/window]
 bottom-panel-active-page='GeditPythonConsolePanel'
-bottom-panel-size=46
+bottom-panel-size=21
 side-panel-active-page='GeditFileBrowserPanel'
 side-panel-size=289
 size=(965, 525)
@@ -4134,13 +4172,13 @@ logfiles=['/var/log/Xorg.0.log']
 width=668
 
 [org/gnome/gnome-system-monitor]
-cpu-stacked-area-chart=false
+cpu-stacked-area-chart=true
 current-tab='resources'
 disks-interval=5000
 graph-update-interval=1000
 maximized=false
-network-in-bits=false
-show-all-fs=false
+network-in-bits=true
+show-all-fs=true
 show-dependencies=false
 show-whose-processes='user'
 update-interval=3000
@@ -4153,6 +4191,8 @@ col-1-visible=true
 col-1-width=244
 col-2-visible=true
 col-2-width=94
+col-4-visible=true
+col-4-width=0
 col-6-visible=true
 col-6-width=0
 columns-order=[0, 1, 2, 3, 4, 5, 6]
@@ -4166,8 +4206,24 @@ sort-order=0
 [org/gnome/gnome-system-monitor/proctree]
 col-0-visible=true
 col-0-width=322
-col-2-visible=false
+col-10-visible=true
+col-11-visible=true
+col-11-width=0
+col-14-visible=true
+col-16-visible=true
+col-17-visible=true
+col-18-visible=true
+col-19-visible=true
+col-2-visible=true
 col-2-width=37
+col-20-visible=true
+col-21-visible=true
+col-21-width=0
+col-3-visible=true
+col-4-visible=true
+col-6-visible=true
+col-6-width=0
+col-9-visible=true
 columns-order=[0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
 sort-col=15
 sort-order=0
@@ -4318,16 +4374,25 @@ workspaces-only-on-primary=true
 [org/gnome/nautilus/compression]
 default-compression-format='zip'
 
+[org/gnome/nautilus/icon-view]
+default-zoom-level='standard'
+
+[org/gnome/nautilus/list-view]
+use-tree-view=true
+
 [org/gnome/nautilus/preferences]
 click-policy='single'
 default-folder-viewer='icon-view'
 executable-text-activation='ask'
 search-filter-time-type='last_modified'
+search-view='list-view'
+show-create-link=true
 show-delete-permanently=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(877, 530)
 maximized=false
+sidebar-width=190
 
 [org/gnome/nm-applet]
 disable-connected-notifications=false
@@ -4604,6 +4669,8 @@ srgba-order='srgb'
 [org/gnome/shell]
 enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-ovpn@yahoo.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'CoverflowAltTab@palatis.blogspot.com', 'hidetopbar@mathieu.bidon.ca', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@paradoxxx.zero.gmail.com', 'TilixDropdown@ivkuzev@gmail.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'popthemetoggle@kylecorry31.github.io', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de']
 favorite-apps=['org.gnome.Screenshot.desktop', 'ubiquity.desktop', 'nemo.desktop', 'org.gnome.Nautilus.desktop', 'com.github.wwmm.pulseeffects.desktop', 'gnome-control-center.desktop', 'com.gexperts.Tilix.desktop', 'gnome-system-monitor.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'nvidia-settings.desktop', 'ca.desrt.dconf-editor.desktop', 'telegramdesktop.desktop', 'chromium-browser.desktop', 'green-recorder.desktop', 'update-manager.desktop']
+had-bluetooth-devices-setup=true
+welcome-dialog-last-shown-version='40.0'
 
 [org/gnome/shell/extensions/EasyScreenCast]
 active-custom-gsp=false
@@ -4814,6 +4881,8 @@ document-type='photo'
 [org/gnome/software]
 check-timestamp=int64 1593485964
 first-run=false
+install-timestamp=int64 1617723968
+update-notification-timestamp=int64 1617857757
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -4950,6 +5019,9 @@ window-maximized=false
 window-position=[0, 0]
 window-size=[870, 405]
 
+[org/gnome/tweaks]
+show-extensions-notice=false
+
 [org/gnome/vinagre]
 show-accels=false
 
@@ -4981,7 +5053,7 @@ show-size-column=true
 show-type-column=true
 sidebar-width=229
 sort-column='name'
-sort-directories-first=false
+sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 window-position=(34, 28)
@@ -5218,11 +5290,11 @@ selection-menu-move-to=true
 show-only-directories=false
 
 [org/nemo/window-state]
-geometry='861x498+26+23'
+geometry='894x489+34+28'
 maximized=false
 side-pane-view='places'
 sidebar-bookmark-breakpoint=0
-sidebar-width=160
+sidebar-width=199
 start-with-menu-bar=true
 start-with-sidebar=true
 start-with-status-bar=true
@@ -5619,8 +5691,6 @@ EOF
 chmod -R a+rx nautilus-autostart.desktop
 EOF
 cp nautilus-autostart.desktop ~/.config/autostart/
-EOF
-gsettings set org.gnome.shell.extensions.user-theme name "Orchis"
 EOF
 sudo mv nautilus-autostart.desktop /etc/xdg/autostart/
 EOF
