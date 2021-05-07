@@ -5769,6 +5769,22 @@ sudo sh -c "/usr/bin/echo 4194304 > /proc/sys/vm/dirty_bytes"
 EOF
 sudo sh -c "/usr/bin/echo 4194304 > /proc/sys/vm/dirty_background_bytes"
 EOF
+sudo sh -c "/usr/bin/echo 10 > /proc/sys/vm/dirty_background_ratio"
+EOF
+sudo sh -c "/usr/bin/echo 1500 > /proc/sys/vm/dirty_expire_centisecs"
+EOF
+sudo sh -c "/usr/bin/echo 20 > /proc/sys/vm/dirty_ratio"
+EOF
+sudo sh -c "/usr/bin/echo 43200 > /proc/sys/vm/dirtytime_expire_seconds"
+EOF
+sudo sh -c "/usr/bin/echo 1500 > /proc/sys/vm/dirty_writeback_centisecs"
+EOF
+sudo sh -c "/usr/bin/echo 0 > /proc/sys/vm/drop_caches"
+EOF
+sudo sh -c "/usr/bin/echo 256	256	32	0	0 > /proc/sys/vm/lowmem_reserve_ratio"
+EOF
+sudo sh -c "/usr/bin/echo 65530 > /proc/sys/vm/max_map_count"
+EOF
 sudo sh -c "/usr/bin/echo 0 > /sys/devices/system/cpu/intel_pstate/no_turbo"
 EOF
 sudo sh -c "/usr/bin/echo 1 > /sys/devices/system/cpu/cpufreq/boost"
