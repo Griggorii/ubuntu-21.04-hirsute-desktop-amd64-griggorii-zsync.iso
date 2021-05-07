@@ -1,7 +1,7 @@
 # hirsute-desktop-amd64-griggorii-zsync.iso
 zfs , zsync , special os new , synchronization file links , quantum os , wayland , mit zfs , rpool , bpool , subiquity os synchronization 20.04 special os , screencast screenrecorder work , iso merge to iso
 
-# ISO DOWNLOAD hirsute iso:https://disk.yandex.ru/d/UnhV-gcj5EoiiA 
+# ISO DOWNLOAD hirsute iso:https://disk.yandex.ru/d/UnhV-gcj5EoiiA install tutorial https://youtu.be/MVhZ_QZGxaQ
 
 Ubuntu 21.04 install new color gamma driver https://youtu.be/hDUcUjt4P3g copy command new restore-backup -> chmod -R a+rwx ./mesa-27.0.1-install-ubuntu-20.04.sh && sudo ./mesa-27.0.1-install-ubuntu-20.04.sh ./mesa-restore-backup.sh
 
