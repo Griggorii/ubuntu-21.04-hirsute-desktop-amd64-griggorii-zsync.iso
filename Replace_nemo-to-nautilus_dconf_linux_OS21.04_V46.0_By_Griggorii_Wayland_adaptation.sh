@@ -41,6 +41,10 @@ xdg-mime default nautilus.desktop inode/directory
 EOF
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
 EOF
+xdg-mime default wine.desktop application/x-ms-dos-executable
+EOF
+xdg-mime default wine-extension-vbs.desktop application/x-wine-extension-vbs
+EOF
 update-mime-database ~/.local/share/mime
 EOF
 cat << EOF > qt5ct.conf
