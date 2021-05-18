@@ -45,6 +45,132 @@ xdg-mime default wine.desktop application/x-ms-dos-executable
 EOF
 xdg-mime default wine-extension-vbs.desktop application/x-wine-extension-vbs
 EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/bzip2
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/gzip
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/vnd.android.package-archive
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/vnd.ms-cab-compressed
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/vnd.debian.binary-package
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-7z-compressed
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-7z-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-ace
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-alz
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-ar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-archive
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-arj
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-brotli
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-bzip-brotli-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-bzip
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-bzip-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-bzip1
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-bzip1-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-cabinet
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-cd-image
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-compress
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-cpio
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-chrome-extension
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-deb
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-ear
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-ms-dos-executable
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-gtar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-gzip
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-gzpostscript
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-java-archive
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lha
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lhz
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lrzip
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lrzip-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lz4
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lzip
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lzip-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lzma
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lzma-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lzop
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-lz4-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-ms-wim
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-rar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-rar-compressed
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-rpm
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-source-rpm
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-rzip
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-rzip-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-tarz
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-tzo
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-stuffit
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-war
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-xar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-xz
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-xz-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-zip
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-zip-compressed
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-zstd-compressed-tar
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/x-zoo
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/zip
+EOF
+xdg-mime default org.gnome.FileRoller.desktop  application/zstd
+EOF
 update-mime-database ~/.local/share/mime
 EOF
 cat << EOF > qt5ct.conf
@@ -5747,8 +5873,6 @@ killall nemo*
 EOF
 nautilus-desktop
 EOF
-sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_V46.0_By_Griggorii_Wayland_adaptation"
-EOF
 sudo -u  '/usr/sbin/gdm3' '/usr/bin/dbus-launch' gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
 EOF
 sudo -u  gdm3 dbus-launch gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
@@ -5907,7 +6031,7 @@ cat << EOF > daemon.conf
 ; default-fragment-size-msec = 25
 
 ; enable-deferred-volume = yes
-deferred-volume-safety-margin-usec = 1
+; deferred-volume-safety-margin-usec = 1
 ; deferred-volume-extra-delay-usec = 0
 EOF
 sudo cp ./daemon.conf /etc/pulse/
@@ -5917,6 +6041,8 @@ EOF
 rm ./daemon.conf
 EOF
 sudo rm ./daemon.conf
+EOF
+sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_V46.0_By_Griggorii_Wayland_adaptation"
 EOF
 plank
 EOF
