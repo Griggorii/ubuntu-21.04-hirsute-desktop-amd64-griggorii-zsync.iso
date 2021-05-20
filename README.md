@@ -13,6 +13,8 @@ Dconf theme: https://github.com/Griggorii/Setting_dconf_linux_OS20.04_V46.0_By_G
 
 synchronization zsync my old os Linux_OS20.04_X64_V5_WINE_Griggorii.iso to hirsute-live-server-amd64.iso
 
+New rebuild pulseaudio-14.2 https://github.com/Griggorii/ubuntu-21.04-hirsute-desktop-amd64-griggorii-zsync.iso/releases/tag/pulseaudio-14.2
+
 $ urlbase=http://cdimage.ubuntu.com/daily-live/20210403
 
 $ isoname=$(distro-info -d)-desktop-amd64-$(dpkg --print-architecture).iso
