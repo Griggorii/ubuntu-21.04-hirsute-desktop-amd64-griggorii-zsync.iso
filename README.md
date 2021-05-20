@@ -26,7 +26,7 @@ verifying download...checksum matches OK
 used 33959936 local, fetched 2788037584
 ______________________________________________________________________________________________________________________________________________________
 
-OLD OS STABLE MOD QT4 20.04 BEST GRAPHICS GAMMA: https://github.com/Griggorii/Linux_OS20.04_V5_X64_By_Griggorii.iso_ubuntu_focal_fossa-linux-image-kernel-5.6.0-oem
+OLD ISO OS STABLE MOD QT4 20.04 BEST GRAPHICS GAMMA: https://github.com/Griggorii/Linux_OS20.04_V5_X64_By_Griggorii.iso_ubuntu_focal_fossa-linux-image-kernel-5.6.0-oem
 
 ______________________________________________________________________________________________________________________________________________________
 
