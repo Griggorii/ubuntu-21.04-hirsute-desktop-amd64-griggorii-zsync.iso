@@ -2,6 +2,9 @@
 
 ####Griggorii@gmail.com mit license dconf-config
 
+EOF
+spd-say Искусственный_интеллект_начинает_сохранение_оригинальных_настроек_подождите_пожалуйста_20_секунд
+EOF
 GREEN="\033[1;32m"
 RED="\033[0;31m"
 YELLOW="\033[1;33m"
