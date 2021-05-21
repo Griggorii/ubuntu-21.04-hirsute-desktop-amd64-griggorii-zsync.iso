@@ -2,6 +2,29 @@
 
 ####Griggorii@gmail.com mit license dconf-config
 
+GREEN="\033[1;32m"
+RED="\033[0;31m"
+YELLOW="\033[1;33m"
+ENDCOLOR="\033[0m"
+COLOR_BLACK="\e[0;30m"
+COLOR_BLUE="\e[0;34m"
+COLOR_GREEN="\e[0;32m"
+COLOR_CYAN="\e[0;36m"
+COLOR_PINK="\e[0;35m"
+COLOR_RED="\e[0;31m"
+COLOR_PURPLE="\e[0;35m"
+COLOR_BROWN="\e[0;33m"
+COLOR_LIGHTGRAY="\e[0;37m"
+COLOR_DARKGRAY="\e[1;30m"
+COLOR_LIGHTBLUE="\e[1;34m"
+COLOR_LIGHTGREEN="\e[1;32m"
+COLOR_LIGHTCYAN="\e[1;36m"
+COLOR_LIGHTRED="\e[1;31m"
+COLOR_LIGHTPURPLE="\e[1;35m"
+COLOR_YELLOW="\e[1;33m"
+COLOR_WHITE="\e[1;37m"
+COLOR_NONE="\e[0m" && echo -e $COLOR_CYAN"________________________________________________________________________________                                                                         " && ENDCOLOR="\033[0m" && COLOR_WHITE="\e[1;37m" COLOR_GREEN="\e[0;32m" COLOR_RED="\e[0;31m" COLOR_CYAN="\e[0;36m" COLOR_YELLOW="\e[1;33m" && echo -e $COLOR_RED"RUS:$COLOR_GREENИскусственный интеллект: $COLOR_CYANначинает сохранение оригинальных настроек подождите пожалуйста 20 секунд оригинальные настройки обои , темы и иконки $COLOR_YELLOW backup-theme-icon-restore.sh $COLOR_CYAN и полные настройки backup $COLOR_YELLOW dconf-settings-original-restore.sh $COLOR_CYAN далее введите пароль от sudo                                                      " && ENDCOLOR="\033[0m" && COLOR_WHITE="\e[1;37m" COLOR_RED="\e[0;31m" COLOR_CYAN="\e[0;36m" COLOR_YELLOW="\e[1;33m" && echo -e $COLOR_CYAN"ENG:$COLOR_RED Artificial intelligence: $COLOR_NONE starts saving original settings please wait 20 seconds wallpaper themes and icons $COLOR_BLACK backup-theme-icon-restore.sh $COLOR_WHITE and full setting backup $COLOR_BLACK dconf-settings-original-restore.sh $COLOR_NONE next please then enter your sudo password                                                                          " && echo -e $COLOR_PURPLE"________________________________________________________________________________                                                                         " && (sleep 20; killall /usr/bin/* )
+EOF
 mkdir backup-theme-icon
 EOF
 cd backup-theme-icon
@@ -4801,7 +4824,8 @@ rgba-order='rgb'
 srgba-order='srgb'
 
 [org/gnome/shell]
-enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-ovpn@yahoo.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'CoverflowAltTab@palatis.blogspot.com', 'hidetopbar@mathieu.bidon.ca', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@paradoxxx.zero.gmail.com', 'TilixDropdown@ivkuzev@gmail.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'popthemetoggle@kylecorry31.github.io', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de']
+disabled-extensions=['ding@rastersoft.com']
+enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'desktop-icons@csoriano', 'auto-ovpn@yahoo.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'CoverflowAltTab@palatis.blogspot.com', 'hidetopbar@mathieu.bidon.ca', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@paradoxxx.zero.gmail.com', 'TilixDropdown@ivkuzev@gmail.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'popthemetoggle@kylecorry31.github.io', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de']
 favorite-apps=['org.gnome.Screenshot.desktop', 'ubiquity.desktop', 'nemo.desktop', 'org.gnome.Nautilus.desktop', 'com.github.wwmm.pulseeffects.desktop', 'gnome-control-center.desktop', 'com.gexperts.Tilix.desktop', 'gnome-system-monitor.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'nvidia-settings.desktop', 'ca.desrt.dconf-editor.desktop', 'telegramdesktop.desktop', 'chromium-browser.desktop', 'green-recorder.desktop', 'update-manager.desktop']
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='40.0'
@@ -6656,6 +6680,8 @@ EOF
 rm ./applications.menu
 EOF
 sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_V46.0_By_Griggorii_Wayland_adaptation"
+EOF
+/usr/bin/gnome-extensions-app
 EOF
 plank
 EOF
