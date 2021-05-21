@@ -3,7 +3,9 @@
 ####Griggorii@gmail.com mit license dconf-config
 
 EOF
-spd-say Искусственный_интеллект_начинает_сохранение_оригинальных_настроек_подождите_пожалуйста_20_секунд
+echo "Искусственный интеллект_начинает_сохранение оригинальных настроек подождите пожалуйста 20 секунд" | spd-say -o rhvoice -l ru -e -t female1 -p -10 -r +10 -R -10 && (sleep 4; killall /usr/bin/* )
+EOF
+echo "Artificial intelligence starts saving original settings please wait 20 seconds" | spd-say -o rhvoice -l en -e -t female1 -p -10 -r +10 -R -10
 EOF
 GREEN="\033[1;32m"
 RED="\033[0;31m"
