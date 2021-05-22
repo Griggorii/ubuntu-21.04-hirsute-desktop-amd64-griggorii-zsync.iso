@@ -3,10 +3,15 @@
 ####Griggorii@gmail.com mit license dconf-config
 
 EOF
-echo "Искусственный интеллект_начинает_сохранение оригинальных настроек подождите пожалуйста 20 секунд" | spd-say -o rhvoice -l ru -e -t female1 -p -10 -r +10 -R -10 && (sleep 4; killall /usr/bin/* )
+echo "Искусственный интеллект_начинает_сохранение оригинальных настроек подождите пожалуйста 20 секунд" | spd-say -o rhvoice -l ru -e -t female1 -p -10 -r +10 -R -10 && clear && (sleep 4; killall /usr/bin/* )
+EOF
+clear
 EOF
 echo "Artificial intelligence starts saving original settings please wait 20 seconds" | spd-say -o rhvoice -l en -e -t female1 -p -10 -r +10 -R -10
 EOF
+clear
+EOF
+clear && 
 GREEN="\033[1;32m"
 RED="\033[0;31m"
 YELLOW="\033[1;33m"
@@ -5855,6 +5860,8 @@ chmod -R a+rx nautilus-autostart.desktop
 EOF
 cp nautilus-autostart.desktop ~/.config/autostart/
 EOF
+clear
+EOF
 sudo mv nautilus-autostart.desktop /etc/xdg/autostart/
 EOF
 rm nautilus-autostart.desktop
@@ -5917,8 +5924,6 @@ EOF
 sudo rm -rf /root/.local/share/gvfs-metadata*
 EOF
 rm -rf ~/.local/share/gvfs-metadata/*
-EOF
-sudo rm /etc/xdg/autostart/nemo-desktop.desktop
 EOF
 killall budgie-panel
 EOF
@@ -6680,13 +6685,20 @@ cat << EOF > applications.menu
 EOF
 sudo mv applications.menu /etc/xdg/menus/
 EOF
-rm applications.menu
-EOF
 rm ./applications.menu
+EOF
+killall nemo-desktop
+EOF
+clear
 EOF
 sh -c "/usr/bin/x-www-browser www.github.com/Griggorii/Setting_dconf_linux_OS20.04_V46.0_By_Griggorii_Wayland_adaptation"
 EOF
+clear
+EOF
 /usr/bin/gnome-extensions-app
+EOF
+clear
 EOF
 plank
 EOF
+clear && exit && exit
